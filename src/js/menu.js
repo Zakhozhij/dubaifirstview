@@ -16,17 +16,23 @@ menuItem.forEach((item) => {
 	});
 });
 
-let h_hght = document.querySelector("header").offsetHeight; // header high
+let h_hght = document.querySelector("header"); // header high
 let h_mrg = 0; //
-window.addEventListener("scroll", () => {
+function toogleHeaderBackground(){
 	let top = window.pageYOffset;
 	const elem = document.querySelector("header");
 	const nav = document.querySelector(".menu_block");
-	if (top + h_mrg < h_hght) {
+	if (top + h_mrg < h_hght.offsetHeight && !document.querySelector(".section-home").classList.contains('disabled')) {
 		elem.style.top = 35 - top + "px";
 		nav.style.cssText = "background:#00000000;";
 	} else {
 		elem.style.top = "10px";
 		nav.style.cssText = "background:linear-gradient(0deg, #2e6bcb, #2e6bcb), #ffffff;";
 	}
+}
+
+
+window.addEventListener("scroll", () => {
+	toogleHeaderBackground();
 });
+

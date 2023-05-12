@@ -22,6 +22,8 @@ function funSearchFlight(){
         $('.section-benefits').toggleClass('disabled');
         $('.section-form').toggleClass('disabled');
         $('.section-search-results').toggleClass('active');
+        toogleHeaderBackground();
+        getOffset();
     }, 5000)
 }
 

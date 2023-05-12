@@ -17,10 +17,18 @@ window.addEventListener(
 
 
 function getOffset() {
-	const form_position = document.querySelector(".form_free_quote").getBoundingClientRect().bottom;
+	let form_position = document.querySelector(".company-partners").getBoundingClientRect().bottom;
 	const promo_position = document.querySelector(".promo").getBoundingClientRect().bottom;
-	document.querySelector(".info_block").style.top = form_position - promo_position + 35 + "px";
-	document.querySelector("footer").style.marginTop = form_position - promo_position + 35 + 200 + "px";
+	if(document.querySelector(".section-home").classList.contains('disabled')){
+		document.querySelector(".info_block").style.cssText = `position:static;margin-top: 50px;`;
+		document.querySelector("footer").style.marginTop = 100 + "px";
+	}else{
+		document.querySelector(".info_block").style.cssText = `position:relative;margin-top: 0;`;
+		document.querySelector(".info_block").style.top = form_position - promo_position + 35 + "px";
+		document.querySelector("footer").style.marginTop = form_position - promo_position + 35 + 200 + "px";
+	}
+
+	
 }
 
 document.querySelector('.modal_feedback_close').addEventListener("click", function (e) {
