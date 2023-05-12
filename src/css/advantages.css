@@ -97,7 +97,7 @@ max-width: 1140px;
 	.section-about-company .tabs.adaptive_mobile {
 	  display: block;
 	}
-	.section-about-company .tabs.adaptive_mobile #tab-btn-1, .section-about-company .tabs.adaptive_mobile #tab-btn-2, .section-about-company .tabs.adaptive_mobile #tab-btn-3, .section-about-company .tabs.adaptive_mobile #tab-btn-4, .section-about-company .tabs.adaptive_mobile #tab-btn-5, .section-about-company .tabs #tab-btn-6, .section-about-company .tabs #tab-btn-7 {
+	.section-about-company .tabs.adaptive_mobile .tab-btn-1, .section-about-company .tabs.adaptive_mobile .tab-btn-2, .section-about-company .tabs.adaptive_mobile .tab-btn-3, .section-about-company .tabs.adaptive_mobile .tab-btn-4, .section-about-company .tabs.adaptive_mobile .tab-btn-5, .section-about-company .tabs .tab-btn-6, .section-about-company .tabs .tab-btn-7 {
 		width: 302px;
 		height: 171px;
 		margin-bottom: 10px;
@@ -119,7 +119,7 @@ max-width: 1140px;
   }
 
   @media all and (max-width: 375px) {
-	.section-about-company .tabs.adaptive_mobile #tab-btn-1, .section-about-company .tabs.adaptive_mobile #tab-btn-2, .section-about-company .tabs.adaptive_mobile #tab-btn-3, .section-about-company .tabs.adaptive_mobile #tab-btn-4, .section-about-company .tabs.adaptive_mobile #tab-btn-5, .section-about-company .tabs #tab-btn-6, .section-about-company .tabs #tab-btn-7 {
+	.section-about-company .tabs.adaptive_mobile .tab-btn-1, .section-about-company .tabs.adaptive_mobile .tab-btn-2, .section-about-company .tabs.adaptive_mobile .tab-btn-3, .section-about-company .tabs.adaptive_mobile .tab-btn-4, .section-about-company .tabs.adaptive_mobile .tab-btn-5, .section-about-company .tabs .tab-btn-6, .section-about-company .tabs .tab-btn-7 {
 		width: 100%;
 		height: 100%;
 	}
@@ -223,14 +223,14 @@ max-width: 1140px;
 	}
   }
   @media all and (max-width: 767px) {
-	.section-about-company .tabs #tab-btn-1, .section-about-company .tabs #tab-btn-2, .section-about-company .tabs #tab-btn-3, .section-about-company .tabs #tab-btn-4, .section-about-company .tabs #tab-btn-5, .section-about-company .tabs #tab-btn-6, .section-about-company .tabs #tab-btn-7 {
+	.section-about-company .tabs .tab-btn-1, .section-about-company .tabs .tab-btn-2, .section-about-company .tabs .tab-btn-3, .section-about-company .tabs .tab-btn-4, .section-about-company .tabs .tab-btn-5, .section-about-company .tabs .tab-btn-6, .section-about-company .tabs .tab-btn-7 {
 	  width: calc(50% - 10px);
 	  margin-bottom: 10px;
 	}
-	.section-about-company .tabs #tab-btn-6{
+	.section-about-company .tabs .tab-btn-6{
 		opacity: 0;
 	}
-	.section-about-company .tabs #content-6{
+	.section-about-company .tabs .content-6{
 		opacity: 0;
 		margin: 0;
 		height: 0;
@@ -241,13 +241,13 @@ max-width: 1140px;
 		display: none;
 	}
   }
-  .section-about-company .tabs #tab-btn-1:hover ~ #content-1,
-  .section-about-company .tabs #tab-btn-2:hover ~ #content-2,
-  .section-about-company .tabs #tab-btn-3:hover ~ #content-3,
-  .section-about-company .tabs #tab-btn-4:hover ~ #content-4,
-  .section-about-company .tabs #tab-btn-5:hover ~ #content-5,
-  .section-about-company .tabs #tab-btn-6:hover ~ #content-6,
-  .section-about-company .tabs #tab-btn-7:hover ~ #content-7 {
+  .section-about-company .tabs .tab-btn-1:hover ~ .content-1,
+  .section-about-company .tabs .tab-btn-2:hover ~ .content-2,
+  .section-about-company .tabs .tab-btn-3:hover ~ .content-3,
+  .section-about-company .tabs .tab-btn-4:hover ~ .content-4,
+  .section-about-company .tabs .tab-btn-5:hover ~ .content-5,
+  .section-about-company .tabs .tab-btn-6:hover ~ .content-6,
+  .section-about-company .tabs .tab-btn-7:hover ~ .content-7 {
 	display: block;
   }
   .section-about-company .tabs .block-card {
