@@ -401,8 +401,8 @@ textarea {
 	width: 100%;
 	background: #ffffff;
 	position: relative;
-	padding: 27px;
-	padding-top:19px;
+	padding:0;
+
 }
 .city_img {
 	position: absolute;
